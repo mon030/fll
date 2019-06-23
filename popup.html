@@ -9,49 +9,48 @@
                 font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
                 font-size: 9pt;
             }
-
+			
             body * {
                 white-space: nowrap;
+				
             }
-
             #about {
+			background:url(https://acg.toubiec.cn/random);
+background-size:400px 300px;
+-moz-background-size:200px 100px; /* 老版本的 Firefox */
+background-repeat:no-repeat;
+padding-top:80px;
                 font-size: 10pt;
                 padding: 10px 20px;
             }
-
             .header{
                 width: 290px;
                 height: 90px;
             }
-
             .header .logo{
                 float:left;
                 margin-bottom: 20px;
             }
-
             .header .logo-content {
                 float:left;
                 margin-left: 10px;
                 padding-top: 5px;
             }
-
             .header .title{
                 font-size:24px;
                 margin: 0px 5px;
             }
-
             .header .sub-title{
                 font-size:16px;
                 margin: 0px 5px;
             }
-
             #about a {
                 cursor: pointer;
                 text-decoration: blink;
                 color: #4285f4;
                 outline : none;
+				
             }
-
             #about .footer {
                 height: 15px;
                 color: #789;
@@ -59,6 +58,7 @@
                 padding-top: 5px;
                 border-top: solid 1px #eef;
                 white-space: nowrap;
+				
             }
         
             #about #tips{
@@ -66,6 +66,7 @@
                 font-size: 16px;
                 display: block;
                 padding-bottom: 5px;
+				
             }
             #settings:after {
                 display: inline-block;
@@ -77,6 +78,49 @@
             .popup_copyright{
                 text-align: center;
             }
+			.doudong{
+    animation: uk-text-shadow-glitch .65s cubic-bezier(1,-1.91,0,2.79) 0s infinite normal both running;
+	}
+@keyframes uk-text-shadow-glitch {
+    0% {
+        text-shadow: none
+    }
+    25% {
+        text-shadow: -2px -2px 0 #ff0048,2px 2px 0 #3234ff
+    }
+    50% {
+        text-shadow: 2px -2px 0 #ff0048,-2px 2px 0 #3234ff
+    }
+    75% {
+        text-shadow: -2px 2px 0 #ff0048,2px -2px 0 #3234ff
+    }
+    100% {
+        text-shadow: 2px 2px 0 #ff0048,-2px -2px 0 #3234ff
+    }
+}
+@keyframes uk-flicker {
+    0% {
+        opacity: 0
+    }
+    10% {
+        opacity: .6;
+        transform: scale(.8)
+    }
+    20% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        opacity: .2;
+        transform: scale(1.1)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
             #settings{
                 display: inline-block;
                 width: 25px;
@@ -84,7 +128,6 @@
                 float: right;
                 margin-top: -22px;
             }
-
         </style>
 
     </head>
@@ -118,9 +161,7 @@
                     <span id="tips"></span>
                 </div>
 
-                <span>
-                    <e href="" id="openMainWebsite" data-i18n-content="popup_switchyWebPage">What do I know</e>
-                </span>
+               
                 <br/>
                 <br/>
             </div>
